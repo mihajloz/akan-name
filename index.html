@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akan Name Finder</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+  </head>
+  <body>
+    <h1 class="title">Akan Name Finder</h1>
+    <div class="content">
+      <div class="info">
+        <p>
+          The Akan people of Ghana have a rich naming tradition where children
+          are named after the day of the week they were born. This practice is
+          steeped in cultural significance and reflects the importance of
+          community and family in Akan society. The Akan people believe that the
+          day of the week a child is born can have an impact on their
+          personality and destiny.
+        </p>
+        <p>Enter your birthdate and gender below to find your day name!</p>
+      </div>
+      <form class="input-form">
+        <label for="date">Date of Birth:</label>
+        <input type="date" id="date-of-birth" name="date-of-birth" required />
+        <label for="gender">Gender:</label>
+        <div class="radio-buttons">
+          <label><input type="radio" name="gender" value="male" />Male</label>
+          <label
+            ><input type="radio" name="gender" value="female" />Female</label
+          >
+        </div>
+
+        <button type="button" onclick="findName()">Find Your Akan Name</button>
+      </form>
+      <h2 id="akan-name"></h2>
+    </div>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>
